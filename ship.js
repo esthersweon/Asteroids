@@ -6,7 +6,7 @@
   };
 
   Ship.RADIUS = 14;
-  Ship.COLOR = "lightgreen";
+  Ship.COLOR = "blue";
 
   Ship.inherits(Asteroids.MovingObject);
 
