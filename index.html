@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asteroids</title>
+</head>
+<body>
+    <canvas width="1000" height="1000" style="background-color: black"></canvas>
+    <script src="keymaster.js"></script>
+    <script src="moving_object.js"></script>
+    <script src="asteroid.js"></script>
+    <script src="bullet.js"></script>
+    <script src="ship.js"></script>
+    <script src="game.js"></script>
+
+    <script>
+        var canvas = document.getElementsByTagName("canvas")[0];
+        var ctx = canvas.getContext("2d");
+        alert("Welcome to Asteroids! Blast the asteroids before they hit your spaceship. Press J,K,L, and I to go left, down, right, and up  . The spacebar will allow you to shoot. Good luck!");
+        new Asteroids.Game(ctx).start();
+    </script>
+</body>
+</html>
