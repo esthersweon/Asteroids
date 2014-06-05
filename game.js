@@ -127,10 +127,10 @@
 
   Game.prototype.bindKeyHandlers = function() {
     var that = this;
-    key('i', function(){ that.ship.power([0,-1]) });
-    key('j', function(){ that.ship.power([-1,0]) });
-    key('k', function(){ that.ship.power([0,1]) });
-    key('l', function(){ that.ship.power([1,0]) });
+    key('up', function(){ that.ship.power([0,-1]) });
+    key('left', function(){ that.ship.power([-1,0]) });
+    key('down', function(){ that.ship.power([0,1]) });
+    key('right', function(){ that.ship.power([1,0]) });
     key('space', function(){ that.fireBullet() });
   };
 
