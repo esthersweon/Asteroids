@@ -9,13 +9,13 @@
     this.intervalTimer = 0;
     this.bullets = [];
     this.image = new Image();
-    this.image.src = 'universe.jpeg';
-    this.image.width = "1000";
-    this.image.height = "1000"
+    this.image.src = '/images/universe.jpeg';
+    this.image.width = "600";
+    this.image.height = "600"
   }
 
-  Game.DIM_X = 1000;
-  Game.DIM_Y = 1000;
+  Game.DIM_X = 600;
+  Game.DIM_Y = 600;
   Game.FPS = 30;
 
   Game.prototype.addAsteroids = function(numAsteroids) {
